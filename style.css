@@ -1,0 +1,51 @@
+body {
+    font-family: 'Cambria', serif; /* Ensure it falls back to a serif font if Cambria isn't available */
+    background-color: #fff9db; /* Very Light Yellow */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #003366;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+ul, ol {
+    list-style-position: inside;
+    text-align: center;
+    padding: 0;
+}
+
+ul li, ol li {
+    margin: 5px 15px;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1a8cff;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #cc66ff;
+}
