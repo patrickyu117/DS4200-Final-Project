@@ -1,10 +1,11 @@
 body {
-    font-family: 'Roboto', sans-serif; /* Ensure it falls back to a sans-serif font if Roboto isn't available */
+    font-family: 'Roboto', sans-serif;
     background-color: #dbe9ff;
     color: #333;
-    margin: 200;
-    padding: 200;
+    margin: 0;
+    padding: 80px 20px 20px; /* Added top padding so content isn't covered */
 }
+
 
 h1, h2, h3 {
     color: #003366;
@@ -35,17 +36,43 @@ img {
 }
 
 nav {
+    background-color: #003366; 
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
     text-align: center;
-    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
 nav a {
+    color: white;
+    font-size: 18px;
     text-decoration: none;
-    color: #1a8cff;
-    font-weight: bold;
-    margin: 0 15px;
+    margin: 0 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
 }
 
 nav a:hover {
-    color: #cc66ff;
+    background: #1a8cff;
+}
+
+
+.visualization {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    width: 80%;
+    max-width: 1000px;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
 }
