@@ -74,7 +74,7 @@ d3.csv("d3_data.csv").then(data => {
         .attr("x", innerWidth / 2)
         .attr("y", innerHeight + 40)
         .attr("text-anchor", "middle")
-        .text("Average GDP");
+        .text("Average GDP per Capita (USD)"); 
 
     g.append("text")
         .attr("class", "axis-label")
