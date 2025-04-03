@@ -39,6 +39,7 @@ nav {
     background-color: #003366; 
     padding: 15px;
     position: fixed;
+    left: 0;
     top: 0;
     width: 100%;
     text-align: center;

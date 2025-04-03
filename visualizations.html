@@ -39,7 +39,7 @@
         </p>
     </section>
     <section>
-        <h2>Visualization 2</h2>
+        <h2>Visualization 2:</h2>
         <div class="visualization" id="chart" style="text-align: center;">
             <script src='https://d3js.org/d3.v7.min.js'></script>
             <script src='main.js'></script>
@@ -58,6 +58,28 @@
             This visualization uses D3.js to create a scatter plot that shows the relationship between life expectancy and GDP per capita for both developed and developing countries in 2015. The x-axis represents GDP per capita, while the y-axis represents life expectancy. Each point on the scatter plot represents a country, with colors indicating whether the country is classified as developed or developing. The graph suggests that Developed countries on average have higher life expectancies, which aligns with the general understanding that wealthier nations tend to have better healthcare systems, higher standards of living, and improved health outcomes. While there is not a significant trend to show GDP affects life expectancy, the graph shows clusters of lower GDP countries with life expectancies below 70, while countries with higher GDPs tend to have life expectancies above 70. However, since there are also countries with both low GDP per capita due to skewing of population (e.g., small populations with high wealth) and high life expectancies, it is important to note that GDP alone does not determine life expectancy. Other factors such as healthcare access, education, lifestyle, and social determinants of health also play crucial roles in influencing life expectancy. This scatter plot provides a visual representation of the complex relationship between economic factors and health outcomes across different countries.
         </p>
     </section>
+    <h2>Visualization 3:</h2>
+    <div class="visualization">
+        <iframe src="visualizations/gdp_vs_schooling_dashboard.html" width="80%" height="600px"></iframe>
+    </div>
+
+    <section class="analysis">
+        <h3>GDP and Schooling Analysis</h3>
+        <p>This visualization presents life expectancy in relation to GDP and schooling. The scatter plot shows a positive correlation
+            between life expectancy and both GDP and schooling. Countries with higher GDPs and longer schooling durations tend to have
+            higher life expectancies. This suggests that economic prosperity and education are significant factors influencing health outcomes.
+            This outcome backs up the reference "Factors that influence life expectancy", stating "Education may play a part in a person’s health. Statistics strongly suggest that a person
+            with a higher education level has a healthier lifestyle. Education on healthy habits, medical care, and sanitation improves family health."
+            and "Economic level also affects life expectancy. High-income countries have a higher life expectancy due to health and living conditions.
+            In contrast, poverty has a major impact on lowering the life expectancy."
+            The bar plot shows the selected country's GDP and makes it easier to compare countries. When selecting countries, you can see that
+            a higher GDP does not always mean a lower life exepctancy, and vice versa. In addition, the scatter plot highlights outliers, which indicates that
+            there are more factors than just schooling and GDP that contribute to life expectancy. For example, in 2010, Haiti's life expectancy is only 36.3,
+            due to the horrible earthquake that happened. The scatter plot highlights an increase in life expectancy and schooling over the years. This shows that as time goes on,
+            countries around the world are becoming more educated and growing economically, which in turn is leading to an increase in life expectancy.
+            
+        </p>
+        </section>
 </body>
 
 </html>
