@@ -1,37 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualizations</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
-        <a href="index.html">Home</a> | 
+        <a href="index.html">Home</a> |
         <a href="visualizations.html">Visualizations</a>
     </nav>
 
     <h2>Visualization 1:</h2>
-    
+
     <div class="visualization" style="text-align: center;">
         <iframe src="visualizations/life_expectancy_map.html" width="80%" height="600px"></iframe>
     </div>
-    
+
     <section class="analysis">
-    <h3>Life Expectancy Analysis</h3>
-    <p>This visualization presents a world map illustrating the changes in life expectancy from 2000 to 2015. 
-        Countries such as Canada, the United States, Australia, Chile, Uruguay, French Guiana, South Korea, Japan and many European 
-        nations consistently rank among the highest in terms of life expectancy, with values surpassing 75 years 
-        throughout the period. These countries tend to have higher GDPs, which often correlate with better healthcare
-        systems, higher standards of living, and overall better health outcomes. In contrast, many African nations 
-        consistently show the lowest life expectancy, which is strongly associated with their lower GDPs. The 
-        majority of countries fall within the average life expectancy range of 45 to 55 years. The visualization highlights how life
-        expectancy varies significantly around the world, showing a direct link between high life expectancy and higher GDPs. 
-        This correlation demonstrates the importance of economic factors in shaping health outcomes.
+        <h3>Life Expectancy Analysis</h3>
+        <p>This visualization presents a world map illustrating the changes in life expectancy from 2000 to 2015.
+            Countries such as Canada, the United States, Australia, Chile, Uruguay, French Guiana, South Korea, Japan
+            and many European
+            nations consistently rank among the highest in terms of life expectancy, with values surpassing 75 years
+            throughout the period. These countries tend to have higher GDPs, which often correlate with better
+            healthcare
+            systems, higher standards of living, and overall better health outcomes. In contrast, many African nations
+            consistently show the lowest life expectancy, which is strongly associated with their lower GDPs. The
+            majority of countries fall within the average life expectancy range of 45 to 55 years. The visualization
+            highlights how life
+            expectancy varies significantly around the world, showing a direct link between high life expectancy and
+            higher GDPs.
+            This correlation demonstrates the importance of economic factors in shaping health outcomes.
 
-    </p>
-</section>
-
+        </p>
+    </section>
+    <section>
+        <h2>Visualization 2</h2>
+        <div class="visualization" id="chart" style="text-align: center;">
+            <script src='https://d3js.org/d3.v7.min.js'></script>
+            <script src='main.js'></script>
+            <div class="radio-container">
+                Status: 
+                <input type="radio" id="developed" name="status" value="Developed" checked>
+                <label for="developed">Developed</label>
+                <input type="radio" id="developing" name="status" value="Developing">
+                <label for="developing">Developing</label>
+              </div>
+        </div>
+    </section>
+    <section class="analysis">
+        <h3>Life Expectancy Analysis</h3>
+        <p>
+            This visualization uses D3.js to create a scatter plot that shows the relationship between life expectancy and GDP per capita for both developed and developing countries in 2015. The x-axis represents GDP per capita, while the y-axis represents life expectancy. Each point on the scatter plot represents a country, with colors indicating whether the country is classified as developed or developing. The graph suggests that Developed countries on average have higher life expectancies, which aligns with the general understanding that wealthier nations tend to have better healthcare systems, higher standards of living, and improved health outcomes. While there is not a significant trend to show GDP affects life expectancy, the graph shows clusters of lower GDP countries with life expectancies below 70, while countries with higher GDPs tend to have life expectancies above 70. However, since there are also countries with both low GDP per capita due to skewing of population (e.g., small populations with high wealth) and high life expectancies, it is important to note that GDP alone does not determine life expectancy. Other factors such as healthcare access, education, lifestyle, and social determinants of health also play crucial roles in influencing life expectancy. This scatter plot provides a visual representation of the complex relationship between economic factors and health outcomes across different countries.
+        </p>
+    </section>
 </body>
+
 </html>
