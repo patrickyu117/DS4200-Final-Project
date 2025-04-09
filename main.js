@@ -55,7 +55,8 @@ d3.csv("d3_data.csv").then(data => {
 
     const colorScale = d3.scaleOrdinal()
         .domain(["Developed", "Developing"])
-        .range(["steelblue", "orange"]);
+        .range(["#440154FF", "#7AD151FF"]);
+
 
     // Create axes
     const xAxis = d3.axisBottom(xScale);
