@@ -161,4 +161,24 @@ iframe {
     line-height: 1.6;
     text-align: justify;
     color: #333;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}
+
+.analysis li {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333;
+}
+
+.analysis ol {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
 }
