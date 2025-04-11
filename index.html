@@ -39,101 +39,57 @@
         and ready for analysis.
     </p>
 
-    <h3>Dataset Attributes:</h3>
-    <table style="border-collapse: collapse; width: 100%; text-align: left; font-family: Arial, sans-serif; margin: 20px 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
-        <thead style="background-color: #f4f4f4; border-bottom: 2px solid #ddd;">
+
+
+    <h3>Dataset Attributes</h3>
+
+    <table class="dataset-table">
+        <thead>
             <tr>
-                <th style="padding: 10px; text-align: left;">Attribute</th>
-                <th style="padding: 10px; text-align: left;">Description</th>
+                <th>Attribute</th>
+                <th>Description</th>
             </tr>
         </thead>
         <tbody>
-            <tr style="border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">Country</td>
-                <td style="padding: 10px;">Name of the country</td>
-            </tr>
-            <tr style="background-color: #f9f9f9; border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">Year</td>
-                <td style="padding: 10px;">Year of observation</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">Life expectancy</td>
-                <td style="padding: 10px;">Average life expectancy in years</td>
-            </tr>
-            <tr style="background-color: #f9f9f9; border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">Adult Mortality</td>
-                <td style="padding: 10px;">Adult mortality rates of both sexes (probability of dying between 15 and 60 years per 1000 population)</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">Infant deaths</td>
-                <td style="padding: 10px;">Number of infant deaths per 1000 population</td>
-            </tr>
-            <tr style="background-color: #f9f9f9; border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">Alcohol</td>
-                <td style="padding: 10px;">Alcohol consumption (liters per capita)</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #ddd;"></tr>
-                <td style="padding: 10px;">Percentage expenditure</td>
-                <td style="padding: 10px;">Expenditure on health as a percentage of GDP per capita</td>
-            </tr>
-            <tr style="background-color: #f9f9f9; border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">Hepatitis B</td>
-                <td style="padding: 10px;">Hepatitis B immunization coverage among 1-year-olds (%)</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">Measles</td>
-                <td style="padding: 10px;">Number of reported measles cases per 1000 population</td>
-            </tr>
-            <tr style="background-color: #f9f9f9; border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">BMI</td>
-                <td style="padding: 10px;">Average Body Mass Index of the population</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">Under-five deaths</td>
-                <td style="padding: 10px;">Number of under-five deaths per 1000 population</td>
-            </tr>
-            <tr style="background-color: #f9f9f9; border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">Polio</td>
-                <td style="padding: 10px;">Polio immunization coverage among 1-year-olds (%)</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">Total expenditure</td>
-                <td style="padding: 10px;">Government expenditure on health as a percentage of GDP</td>
-            </tr>
-            <tr style="background-color: #f9f9f9; border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">Diphtheria</td>
-                <td style="padding: 10px;">Diphtheria immunization coverage among 1-year-olds (%)</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">HIV/AIDS</td>
-                <td style="padding: 10px;">Deaths per 1000 live births due to HIV/AIDS (0-4 years)</td>
-            </tr>
-            <tr style="background-color: #f9f9f9; border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">GDP</td>
-                <td style="padding: 10px;">Gross Domestic Product per capita (in USD)</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">Population</td>
-                <td style="padding: 10px;">Population of the country</td>
-            </tr>
-            <tr style="background-color: #f9f9f9; border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">Schooling</td>
-                <td style="padding: 10px;">Average number of years of schooling</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">Thinness 1-19 years</td>
-                <td style="padding: 10px;">Prevalence of thinness among children and adolescents aged 10-19 years (%)</td>
-            </tr>
-            <tr style="background-color: #f9f9f9; border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">Thinness 5-9 years</td>
-                <td style="padding: 10px;">Prevalence of thinness among children aged 5-9 years (%)</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #ddd;">
-                <td style="padding: 10px;">Income composition of resources</td>
-                <td style="padding: 10px;">Human Development Index in terms of income composition of resources (index ranging from 0 to 1)</td>
-            </tr>
-        </tbody>
-    </table>
+            <tr class="section-header"><td colspan="2">Location</td></tr>
+            <tr><td>Country</td><td>Name of the country</td></tr>
+            <tr><td>Year</td><td>Year of observation</td></tr>
+            
+            <tr class="section-header"><td colspan="2">Economics</td></tr>
+            <tr><td>GDP</td><td>Gross Domestic Product per capita (USD)</td></tr>
+            <tr><td>Income composition of resources</td><td>HDI income index (0–1)</td></tr>
+            <tr><td>Total expenditure</td><td>Government health spending (% of GDP)</td></tr>
+            <tr><td>Percentage expenditure</td><td>Health spending as % of GDP per capita</td></tr>
+            
+            <tr class="section-header"><td colspan="2">Public Health</td></tr>
+            <tr><td>Life expectancy</td><td>Average life expectancy in years</td></tr>
+            <tr><td>Adult Mortality</td><td>Mortality rate for ages 15–60</td></tr>
+            <tr><td>Infant deaths</td><td>Infant deaths per 1000 population</td></tr>
+            <tr><td>Under-five deaths</td><td>Under-five deaths per 1000 population</td></tr>
+            <tr><td>HIV/AIDS</td><td>Child deaths from HIV/AIDS (0–4 years)</td></tr>
+            <tr><td>Measles</td><td>Measles cases per 1000 population</td></tr>
+            
+            <tr class="section-header"><td colspan="2">Immunizations</td></tr>
+            <tr><td>Hepatitis B</td><td>Coverage among 1-year-olds (%)</td></tr>
+            <tr><td>Polio</td><td>Coverage among 1-year-olds (%)</td></tr>
+            <tr><td>Diphtheria</td><td>Coverage among 1-year-olds (%)</td></tr>
+            
+            <tr class="section-header"><td colspan="2">Health Risk Factors</td></tr>
+            <tr><td>Alcohol</td><td>Consumption in liters per capita</td></tr>
+            <tr><td>BMI</td><td>Body Mass Index average</td></tr>
+            <tr><td>Thinness 1-19 years</td><td>Thinness among ages 10–19 (%)</td></tr>
+            <tr><td>Thinness 5-9 years</td><td>Thinness among ages 5–9 (%)</td></tr>
+            
+            <tr class="section-header"><td colspan="2">Demographics</td></tr>
+            <tr><td>Population</td><td>Total population</td></tr>
+            <tr><td>Schooling</td><td>Average years of schooling</td></tr>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
 
     <img src="https://camo.githubusercontent.com/2effc15c1f751e486f535069fd523dc6dae88ecdbeeb91a2b6c470028d7db5de/68747470733a2f2f63646e2e7261776769742e636f6d2f666c656b73636861732f73696d706c652d776f726c642d6d61702f61333664656365352f776f726c642d6d61702e737667" 
      alt="World Map" 
