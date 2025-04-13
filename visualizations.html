@@ -10,8 +10,8 @@
 
 <body>
     <nav>
-        <a href="index.html">Home</a> | 
-        <a href="visualizations.html">Visualizations</a> | 
+        <a href="index.html">Home</a> |
+        <a href="visualizations.html">Visualizations</a> |
         <a href="conclusion.html">Conclusions</a>
     </nav>
 
@@ -25,12 +25,19 @@
         <h3>Life Expectancy Analysis</h3>
         <p>
             This visualization presents a world map illustrating changes in life expectancy from 2000 to 2015.
-            Countries such as Canada, the United States, Australia, Chile, Uruguay, French Guiana, South Korea, Japan, and many European nations consistently rank among the highest in terms of life expectancy, with values surpassing 75 years throughout the period.
-            These countries tend to have higher GDPs, which often correlate with better healthcare systems, higher standards of living, and overall better health outcomes—factors that contribute to longer lifespans.
-            In contrast, many African nations consistently show the lowest life expectancy, frequently falling within the range of 45 to 55 years.
-            While there is a general association between economic development and life expectancy, this relationship is not deterministic.
-            Some countries with relatively lower GDPs still achieve high life expectancy due to factors like strong public health policies, education systems, or community health initiatives.
-            This visualization highlights the global disparities in health outcomes and invites deeper exploration into the different factors that influence longevity.
+            Countries such as Canada, the United States, Australia, Chile, Uruguay, French Guiana, South Korea, Japan,
+            and many European nations consistently rank among the highest in terms of life expectancy, with values
+            surpassing 75 years throughout the period.
+            These countries tend to have higher GDPs, which often correlate with better healthcare systems, higher
+            standards of living, and overall better health outcomes—factors that contribute to longer lifespans.
+            In contrast, many African nations consistently show the lowest life expectancy, frequently falling within
+            the range of 45 to 55 years.
+            While there is a general association between economic development and life expectancy, this relationship is
+            not deterministic.
+            Some countries with relatively lower GDPs still achieve high life expectancy due to factors like strong
+            public health policies, education systems, or community health initiatives.
+            This visualization highlights the global disparities in health outcomes and invites deeper exploration into
+            the different factors that influence longevity.
 
 
 
@@ -38,45 +45,70 @@
     </section>
     <section>
         <h2>Visualization 2:</h2>
-        <div class="visualization" id="chart" style="text-align: center;">
+        <div class="visualization" id="vis2">
+            <div id="scatter-plot"></div>
             <script src='https://d3js.org/d3.v7.min.js'></script>
             <script src='main.js'></script>
-            <div class="radio-container">
-                Status: 
-                <input type="radio" id="developed" name="status" value="Developed" checked>
+            <div class="radio-container" id="controls">
+                Status:
+                <input type="radio" id="all" name="status" value="All" checked>
+                <label for="all">All</label>
+                <input type="radio" id="developed" name="status" value="Developed">
                 <label for="developed">Developed</label>
                 <input type="radio" id="developing" name="status" value="Developing">
                 <label for="developing">Developing</label>
-              </div>
+            </div>
         </div>
     </section>
     <section class="analysis">
         <h3>Life Expectancy Analysis</h3>
         <p>
-            This visualization uses D3.js to create a scatter plot that shows the relationship between life expectancy and GDP per capita for both developed and developing countries in 2015. The x-axis represents GDP per capita, while the y-axis represents life expectancy. Each point on the scatter plot represents a country, with colors indicating whether the country is classified as developed or developing. The graph suggests that Developed countries on average have higher life expectancies, which aligns with the general understanding that wealthier nations tend to have better healthcare systems, higher standards of living, and improved health outcomes. While there is not a significant trend to show GDP affects life expectancy, the graph shows clusters of lower GDP countries with life expectancies below 70, while countries with higher GDPs tend to have life expectancies above 70. However, since there are also countries with both low GDP per capita due to skewing of population (e.g., small populations with high wealth) and high life expectancies, it is important to note that GDP alone does not determine life expectancy. Other factors such as healthcare access, education, lifestyle, and social determinants of health also play crucial roles in influencing life expectancy. This scatter plot provides a visual representation of the complex relationship between economic factors and health outcomes across different countries.
+            This visualization uses D3.js to create a scatter plot that shows the relationship between life expectancy
+            and GDP per capita for both developed and developing countries in 2015. The x-axis represents GDP per
+            capita, while the y-axis represents life expectancy. Each point on the scatter plot represents a country,
+            with colors indicating whether the country is classified as developed or developing. The graph suggests that
+            Developed countries on average have higher life expectancies, which aligns with the general understanding
+            that wealthier nations tend to have better healthcare systems, higher standards of living, and improved
+            health outcomes. While there is not a significant linear trend to show that GDP affects life expectancy (note how the slope for all regressions are very close to 0, especially when a country has reached "Developed" status), the graph shows
+            clusters of lower GDP countries with life expectancies below 70, while countries with higher GDPs tend to
+            have life expectancies above 70. However, since there are also countries with both low GDP per capita due to
+            skewing of population (e.g., small populations with high wealth) and high life expectancies, it is important
+            to note that GDP alone does not determine life expectancy. Other factors such as healthcare access,
+            education, lifestyle, and social determinants of health also play crucial roles in influencing life
+            expectancy. This scatter plot provides a visual representation of the complex relationship between economic
+            factors and health outcomes across different countries.
         </p>
     </section>
     <h2>Visualization 3:</h2>
-   
-        <div class="visualization">
-            <iframe src="visualizations/gdp_vs_schooling.html" height="450px"></iframe>
-        </div>
-        
- 
+
+    <div class="visualization">
+        <iframe src="visualizations/gdp_vs_schooling.html" height="450px"></iframe>
+    </div>
+
+
 
     <section class="analysis">
         <h3>GDP and Schooling Analysis</h3>
-        <p>This visualization presents life expectancy in relation to GDP and schooling. The scatter plot shows a positive correlation
-            between life expectancy and both GDP and schooling. Countries with higher GDPs and longer schooling durations tend to have
-            higher life expectancies. This suggests that economic prosperity and education are significant factors influencing health outcomes.
-            This outcome backs up the reference "Factors that influence life expectancy", stating "Education may play a part in a person’s health. Statistics strongly suggest that a person
-            with a higher education level has a healthier lifestyle. Education on healthy habits, medical care, and sanitation improves family health."
-            and "Economic level also affects life expectancy. High-income countries have a higher life expectancy due to health and living conditions.  In contrast, poverty has a major impact on lowering the life expectancy."
-            The plot also highlights an overall increase in life expectancy and schooling over the years. This shows that as time goes on, countries around the world are becoming more
-            educated and growing economically, which in turn is leading to an increase in life expectancy for the reasons stated above.
-            Additionally, the visualization makes outliers apparent, which indicates that there are more factors than just schooling and GDP that contribute to life expectancy.
-            For example, in 2010, Haiti's life expectancy is only 36.3, due to the horrible earthquake that happened. 
-            
+        <p>This visualization presents life expectancy in relation to GDP and schooling. The scatter plot shows a
+            positive correlation
+            between life expectancy and both GDP and schooling. Countries with higher GDPs and longer schooling
+            durations tend to have
+            higher life expectancies. This suggests that economic prosperity and education are significant factors
+            influencing health outcomes.
+            This outcome backs up the reference "Factors that influence life expectancy", stating "Education may play a
+            part in a person’s health. Statistics strongly suggest that a person
+            with a higher education level has a healthier lifestyle. Education on healthy habits, medical care, and
+            sanitation improves family health."
+            and "Economic level also affects life expectancy. High-income countries have a higher life expectancy due to
+            health and living conditions. In contrast, poverty has a major impact on lowering the life expectancy."
+            The plot also highlights an overall increase in life expectancy and schooling over the years. This shows
+            that as time goes on, countries around the world are becoming more
+            educated and growing economically, which in turn is leading to an increase in life expectancy for the
+            reasons stated above.
+            Additionally, the visualization makes outliers apparent, which indicates that there are more factors than
+            just schooling and GDP that contribute to life expectancy.
+            For example, in 2010, Haiti's life expectancy is only 36.3, due to the horrible earthquake that happened.
+
         </p>
     </section>
 
@@ -84,11 +116,23 @@
     <div class="visualization" style="text-align: center;">
         <iframe src="visualizations/education_vs_health.html" width="80%" height="600px"></iframe>
     </div>
-    
+
     <section class="analysis">
         <h3>Education vs. Health Burden Analysis</h3>
-        <p>This visualization explores the relationship between the HIV/AIDS prevelance and average years of schooling across different countries from 2000 to 2015. The bubble chart reveals a global trend over the 15 years, which is that as education levels rise, the prevelance of HIV/AIDS tends to decline. Countries with higher average years of schooling often exhibit lower rates of HIV/AIDS, suggesting that education plays a critical role in reducing the spread of infectious diseases through greater health awareness, preventative behaviors, and access to care. The overall global trend of declining HIV/AIDS rates highlights the impact of worldwide efforts to combat the epidemic. According to KFF Health News, landmark initiatives like the launch of PEPFAR in 2003, the WHO's "3 by 5" campaign, and the increase in antiretroviral therapies all contributed to this progress. In fact, UNAIDS reported that by 2013 AIDS related deaths had declined nearly 30% since 2005. This measure of the contuining progress is reflected in the above visualization which depicts global life expectancy increasing from 2000 to 2015. These developments, alongside improved access to education, particularly in developing countries, underscore how health and education systems must evolve together to achieve significant long-term public health outcomes.
-            
+        <p>This visualization explores the relationship between the HIV/AIDS prevelance and average years of schooling
+            across different countries from 2000 to 2015. The bubble chart reveals a global trend over the 15 years,
+            which is that as education levels rise, the prevelance of HIV/AIDS tends to decline. Countries with higher
+            average years of schooling often exhibit lower rates of HIV/AIDS, suggesting that education plays a critical
+            role in reducing the spread of infectious diseases through greater health awareness, preventative behaviors,
+            and access to care. The overall global trend of declining HIV/AIDS rates highlights the impact of worldwide
+            efforts to combat the epidemic. According to KFF Health News, landmark initiatives like the launch of PEPFAR
+            in 2003, the WHO's "3 by 5" campaign, and the increase in antiretroviral therapies all contributed to this
+            progress. In fact, UNAIDS reported that by 2013 AIDS related deaths had declined nearly 30% since 2005. This
+            measure of the contuining progress is reflected in the above visualization which depicts global life
+            expectancy increasing from 2000 to 2015. These developments, alongside improved access to education,
+            particularly in developing countries, underscore how health and education systems must evolve together to
+            achieve significant long-term public health outcomes.
+
         </p>
     </section>
 
@@ -99,8 +143,16 @@
 
     <section class="analysis">
         <h3>HIV/AIDS vs. Life Expectancy Analysis</h3>
-        <p>The visualization illustrates the inverse relationship between HIV/AIDS rates and life expectancy across countries in 2015. Countries with the highest life expectancy (shown in green bars: Slovenia, Denmark, Chile, Cyprus, Japan) consistently maintain extremely low HIV/AIDS rates of just 0.1%, while also enjoying long lifespans ranging from 82-89 years. In dramatic contrast, the countries with lowest life expectancy (shown in purple bars: Sierra Leone, Angola, Central African Republic, Chad, Côte d'Ivoire) suffer from higher HIV/AIDS rates. A clear pattern emerges in this data. The high life expectancy countries all maintain very low HIV/AIDS rates of 0.1%, corresponding with long lifespans between 83.7-88 years. In contrast, the countries with lowest life expectancy show significantly higher HIV/AIDS rates ranging from 0.5% in Sierra Leone to 4.4% in Central African Republic, with life expectancies clustered around 52-53.7 years.
-            
+        <p>The visualization illustrates the inverse relationship between HIV/AIDS rates and life expectancy across
+            countries in 2015. Countries with the highest life expectancy (shown in green bars: Slovenia, Denmark,
+            Chile, Cyprus, Japan) consistently maintain extremely low HIV/AIDS rates of just 0.1%, while also enjoying
+            long lifespans ranging from 82-89 years. In dramatic contrast, the countries with lowest life expectancy
+            (shown in purple bars: Sierra Leone, Angola, Central African Republic, Chad, Côte d'Ivoire) suffer from
+            higher HIV/AIDS rates. A clear pattern emerges in this data. The high life expectancy countries all maintain
+            very low HIV/AIDS rates of 0.1%, corresponding with long lifespans between 83.7-88 years. In contrast, the
+            countries with lowest life expectancy show significantly higher HIV/AIDS rates ranging from 0.5% in Sierra
+            Leone to 4.4% in Central African Republic, with life expectancies clustered around 52-53.7 years.
+
         </p>
     </section>
 </body>

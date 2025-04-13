@@ -146,12 +146,12 @@ iframe {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin: 30px auto;
-    width: 80%; /* Same width as the visualization */
-    max-width: 1000px; /* Same max-width as the visualization */
+    width: 80%;
+    max-width: 1000px;
 }
 
 .analysis h2 {
-    color: #003366; /* Dark blue color */
+    color: #003366;
     text-align: center;
     font-size: 24px;
 }
@@ -207,11 +207,15 @@ iframe {
 
 
 .section-header td {
-    color: #003366; /* Navy blue color */
+    color: #003366;
     font-weight: bold; 
 }
 
 
 th {
-    color: #003366; /* Navy blue color */
+    color: #003366; 
+}
+
+#vis2 {
+    text-align: center;
 }
